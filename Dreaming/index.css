@@ -1,0 +1,179 @@
+/* For General */
+* {
+  margin: 0px;
+}
+
+body {
+  background-color: #46485d;
+  color: white;
+}
+
+h1,
+li,
+.seeAll {
+  font-family: "Road Rage", sans-serif;
+  font-weight: 100;
+}
+
+h2 {
+  font-family: "Pacifico", cursive;
+  display: inline;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+ul {
+  display: inline;
+}
+
+li {
+  font-size: 22px;
+  display: inline;
+  margin-right: 22px;
+}
+
+table {
+  border-spacing: 20px 55px;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font-family: "Roboto Mono", monospace;
+  background-color: #7e759f;
+  border: 0px;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 20px;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.dreamMeans>p, .footer p{
+  opacity: 0.6;
+}
+
+/* Start Navbar Section */
+.navbar {
+  padding: 20px;
+}
+
+.navbar div {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+
+.ul-container {
+  padding-top: 8px;
+  position: absolute;
+  right: 0;
+}
+/* End Navbar Section */
+
+/* Start Image Section */
+.imgSection {
+  position: relative;
+}
+
+.imgSection div {
+  font-family: "Roboto Mono", monospace;
+  position: absolute;
+  padding: 0px 40px;
+}
+
+.imgSection h3 {
+  margin-bottom: 10px;
+}
+
+.imgSectionText1 {
+  top: 230px;
+}
+
+.imgSectionText2 {
+  top: 330px;
+}
+
+.exploreBtn {
+  background-color: #5772ff;
+  margin: 27px 20px 0px 0px;
+}
+
+.productsBtn {
+  background-color: transparent;
+  border: 1px solid white;
+}
+/* End Image Section */
+
+/* Start Dream Means Section */
+.dreamMeans {
+  text-align: center;
+  padding: 20px 40px;
+}
+
+.dreamMeans p {
+  padding-top: 20px;
+  line-height: 25px;
+}
+
+.dreamTypes {
+  display: inline;
+}
+
+.dreamTypes p {
+  font-weight: 500;
+}
+
+.dreamTypes td {
+  width: 30%;
+  margin: auto;
+  padding: 0px 90px;
+}
+/* End Dream Means Section */
+
+/* Start Products Section */
+.products {
+  text-align: center;
+  padding: 30px;
+  position: relative;
+}
+
+.firstRow {
+  margin: 400px;
+}
+
+.seeAll {
+  font-size: 17px;
+  position: absolute;
+  right: 52px;
+  bottom: 60px;
+}
+/* End Products Section */
+
+/* Start Footer Section */
+.footer {
+  background-color: #53567b;
+  text-align: center;
+  padding: 30px 60px;
+}
+
+.footer p {
+  margin: 20px;
+}
+
+.footer div {
+  width: 70%;
+  margin: auto;
+}
+
+.footer img {
+  width: 7%;
+  padding: 10px 30px;
+}
+/* End Footer Section */
