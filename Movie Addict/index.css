@@ -86,23 +86,18 @@ table {
 
 /* Start Big Poster Section */
 .bigPoster {
-  font-weight: 600;
-}
-
-.bigPoster img {
   position: relative;
 }
 
 .coverText {
-  width: 100%;
-  margin: auto;
-  text-align: center;
   position: absolute;
-  top: 500px;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
 }
 
 .coverText div {
-  max-width: 50%;
+  max-width: 800px; 
   margin: auto;
   display: flex;
   justify-content: space-around;
@@ -124,6 +119,7 @@ table {
   font-weight: 600;
   letter-spacing: 1px;
 }
+
 /* End Big Poster Section */
 
 /* Start Movies & Series Section */
@@ -179,8 +175,10 @@ table {
 }
 
 .watchListBtn {
-  width: 99%;
-  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 
