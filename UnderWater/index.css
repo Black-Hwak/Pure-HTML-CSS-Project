@@ -1,0 +1,672 @@
+/* for general */
+* {
+  font-family: sans-serif;
+  margin: 0;
+}
+body {
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  padding: 8px 25px;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: transparent;
+  color: white;
+  transition-duration: 0.5s;
+}
+
+button:hover {
+  background-color: rgb(10, 161, 243);
+  cursor: pointer;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./img/underwater.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+/* nav and logo */
+.nav {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.signIn{
+  line-height: 50px;
+}
+
+/* start underwater text */
+.underWaterText{
+  margin-left: 120px;
+  width: 40%;
+  color: white;
+}
+
+.underWaterText p{
+  text-shadow: 0px 0px 6px rgba(34,192,206,0.93);
+}
+.underWaterText>div>p{
+  font-size: 55px;
+  display: inline;
+}
+
+.underWaterText>div>div{
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: white;
+}
+.diving{
+  font-size: 12px;
+  margin: 10px 0px 20px 12px;
+}
+
+.diving+p{
+  font-size: 15px;
+  margin-left: 12px;
+}
+
+.playBtn{
+  width: 100%;
+  text-align: center;
+}
+
+.playBtn button{
+  border-width: 1.5px;
+  padding: 10px 120px;
+  font-size: 18px;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+/* end underwater text */
+
+/* start bubble section */
+.bubble {
+  margin: 50px;
+  width: 40px;
+  position: absolute;
+  bottom: -180px;
+}
+.b0 {
+  animation: bubbleMove0 10s infinite 2s;
+  transform: translateX(10px);
+}
+.b1 {
+  animation: bubbleMove1 10s infinite 0.5s;
+  transform: translateX(100px);
+}
+.b2 {
+  animation: bubbleMove2 10s infinite 0.8s;
+  transform: translate(150px, -15px);
+}
+.b3 {
+  animation: bubbleMove3 10s infinite 3s;
+  transform: translate(200px, -90px);
+}
+
+.b4 {
+  animation: bubbleMove4 12s initial 0.3s;
+  transform: translate(430px, -20px);
+}
+.b5 {
+  animation: bubbleMove5 11s infinite 2s;
+  transform: translate(460px, -40px);
+}
+.b6 {
+  animation: bubbleMove6 10s infinite 0.6s;
+  transform: translateX(530px);
+}
+.b7 {
+  animation: bubbleMove7 13s infinite 4.5s;
+  transform: translate(730px, -60px);
+}
+.b8 {
+  animation: bubbleMove8 11s infinite 1s;
+  transform: translate(790px, -10px);
+}
+.b9 {
+  animation: bubbleMove9 10s initial 0.8s;
+  transform: translate(870px, -30px);
+}
+.b10 {
+  animation: bubbleMove10 12s infinite 3s;
+  transform: translate(900px, -20px);
+}
+.b11 {
+  animation: bubbleMove11 10s infinite 6s;
+  transform: translate(970px, -40px);
+}
+.b12 {
+  animation: bubbleMove12 13s initial 0.4s;
+  transform: translate(1020px, -70px);
+}
+.b13 {
+  animation: bubbleMove13 10s initial 1s;
+  transform: translate(1090px, -100px);
+  visibility: hidden;
+}
+.b14 {
+  animation: bubbleMove14 12s infinite 3.5s;
+  transform: translate(1110px, -100px);
+  visibility: hidden;
+}
+.b15 {
+  animation: bubbleMove15 11s infinite 1.4s;
+  transform: translate(1150px, -140px);
+  visibility: hidden;
+}
+
+.b16 {
+  animation: bubbleMove16 10s infinite 6s;
+  transform: translate(790px, -30px);
+}
+.b18 {
+  animation: bubbleMove16 11s infinite 7s;
+  transform: translate(690px, -50px);
+}
+.b20 {
+  animation: bubbleMove16 12s infinite 5s;
+  transform: translate(820px, -20px);
+}
+
+.b17 {
+  animation: bubbleMove17 9s infinite 8s;
+  transform: translate(390px, -45px);
+}
+.b19 {
+  animation: bubbleMove17 7s infinite;
+  transform: translate(490px, -50px);
+}
+/* end bubble section */
+
+/* start bubble animation */
+@keyframes bubbleMove0 {
+  from {
+    width: 40px;
+  }
+  to {
+    transform: translate(50px, -500px);
+    width: 20px;
+    opacity: 0.1;
+  }
+}
+@keyframes bubbleMove1 {
+  from {
+    width: 40px;
+  }
+  to {
+    transform: translate(200px, -500px);
+    width: 20px;
+    opacity: 0.1;
+  }
+}
+@keyframes bubbleMove2 {
+  from {
+    width: 50px;
+  }
+  to {
+    transform: translate(160px, -450px);
+    width: 10px;
+    opacity: 0;
+  }
+}
+@keyframes bubbleMove3 {
+  from {
+    width: 35px;
+  }
+  to {
+    transform: translate(180px, -490px);
+    width: 20px;
+    opacity: 0.2;
+  }
+}
+@keyframes bubbleMove4 {
+  from {
+    width: 45px;
+  }
+  to {
+    transform: translate(410px, -490px);
+    width: 10px;
+    opacity: 0.1;
+  }
+}
+@keyframes bubbleMove5 {
+  from {
+    width: 50px;
+  }
+  to {
+    transform: translate(500px, -520px);
+    width: 20px;
+    opacity: 0;
+  }
+}
+@keyframes bubbleMove6 {
+  from {
+    width: 38px;
+  }
+  to {
+    transform: translate(480px, -500px);
+    width: 10px;
+    opacity: 0.1;
+  }
+}
+@keyframes bubbleMove7 {
+  from {
+    width: 35px;
+  }
+  to {
+    transform: translate(730px, -520px);
+    width: 20px;
+    opacity: 0;
+  }
+}
+@keyframes bubbleMove8 {
+  from {
+    width: 50px;
+  }
+  to {
+    transform: translate(780px, -480px);
+    width: 10px;
+    opacity: 0;
+  }
+}
+@keyframes bubbleMove9 {
+  from {
+    width: 45px;
+  }
+  to {
+    transform: translate(800px, -490px);
+    width: 20px;
+    opacity: 0;
+  }
+}
+@keyframes bubbleMove10 {
+  from {
+    width: 47px;
+  }
+  to {
+    transform: translate(820px, -500px);
+    width: 10px;
+    opacity: 0.2;
+  }
+}
+@keyframes bubbleMove11 {
+  from {
+    width: 38px;
+  }
+  to {
+    transform: translate(970px, -500px);
+    width: 10px;
+    opacity: 0.1;
+  }
+}
+@keyframes bubbleMove12 {
+  from {
+    width: 40px;
+  }
+  to {
+    transform: translate(950px, -530px);
+    width: 20px;
+    opacity: 0;
+  }
+}
+@keyframes bubbleMove13 {
+  from {
+    width: 40px;
+    visibility: visible;
+  }
+  to {
+    transform: translate(950px, -530px);
+    width: 10px;
+    opacity: 0.2;
+  }
+}
+@keyframes bubbleMove14 {
+  from {
+    width: 40px;
+    visibility: visible;
+  }
+  to {
+    transform: translate(1030px, -560px);
+    width: 20px;
+    opacity: 0.2;
+  }
+}
+@keyframes bubbleMove15 {
+  from {
+    width: 48px;
+    visibility: visible;
+  }
+  to {
+    transform: translate(1090px, -520px);
+    width: 10px;
+    opacity: 0.1;
+  }
+}
+@keyframes bubbleMove16 {
+  from {
+    width: 55px;
+  }
+  to {
+    transform: translate(800px, -520px);
+    width: 10px;
+    opacity: 0.1;
+  }
+}
+@keyframes bubbleMove17 {
+  from {
+    width: 60px;
+  }
+  to {
+    transform: translate(340px, -470px);
+    width: 10px;
+    opacity: 0.1;
+  }
+}
+/* end bubble animation */
+
+/* start creatures section */
+.all {
+  width: 100%;
+  height: 100vh;
+}
+.creatures {
+  width: 50px;
+  position: absolute;
+  transform: translateX(0px);
+}
+
+/* start fish section */
+.fish1 {
+  animation: moveFish1 10s linear 2s infinite;
+  top: 50%;
+  visibility: hidden;
+}
+.fish5 {
+  animation: moveFish5 10s linear 2s infinite;
+  top: 65%;
+  transform: rotateY(180deg);
+  visibility: hidden;
+}
+.fish2 {
+  animation: moveFish2 15s linear infinite;
+  top: 87%;
+}
+.fish4 {
+  animation: moveFish4 15s linear infinite;
+  transform: rotateY(180deg);
+  top: 87%;
+}
+.fish3 {
+  animation: moveFish3 15s linear 3s infinite;
+  top: 72%;
+  right: -25%;
+  width: 60px;
+}
+.fish6 {
+  animation: moveFish6 8s linear infinite;
+  top: 65%;
+  right: 0;
+  width: 60px;
+  transform: rotateY(180deg);
+}
+.fish7 {
+  animation: moveFish6 12s linear 0.5s infinite;
+  top: 75%;
+  right: -10%;
+  width: 80px;
+  transform: rotateY(180deg);
+}
+.fish8 {
+  animation: moveFish8 15s linear 7s infinite;
+  top: 58%;
+  width: 70px;
+  visibility: hidden;
+}
+.fishGroup {
+  animation: moveFishGroup 10s linear 0.4s infinite;
+  top: 65%;
+  width: 70px;
+  visibility: hidden;
+}
+/* end fish section */
+
+/* start fish animation */
+@keyframes moveFish1 {
+  0% {
+    transform: translateY(-50px);
+    left: 100%;
+    visibility: visible;
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  65% {
+    transform: translateY(-20px);
+    left: 50%; /* Meet at the middle */
+  }
+  75% {
+    transform: rotateY(180deg) translateY(0px);
+    left: 54%;
+  }
+  100% {
+    transform: rotateY(180deg) translateY(-50px);
+    left: 100%;
+  }
+}
+@keyframes moveFish5 {
+  0% {
+    transform: rotateY(180deg) translateY(-50px);
+    right: 100%;
+    visibility: visible;
+  }
+  25% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  45% {
+    transform: rotateY(180deg) translateY(-80px);
+    right: 50%; /* Meet at the middle */
+  }
+  75% {
+    transform: rotateY(360deg) translateY(-40px);
+    right: 45%;
+  }
+  100% {
+    transform: rotateY(360deg) translateY(-90px);
+    right: 100%;
+  }
+}
+@keyframes moveFish2 {
+  0% {
+    transform: translateY(-90px);
+    left: 100%;
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+    left: 50%; /* Meet at the middle */
+  }
+  75% {
+    transform: rotateY(180deg) translateY(0px);
+    left: 54%;
+  }
+  100% {
+    transform: rotateY(180deg) translateY(-90px);
+    left: 100%;
+  }
+}
+@keyframes moveFish4 {
+  0% {
+    transform: rotateY(180deg) translateY(-70px);
+    right: 100%;
+  }
+  25% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  50% {
+    transform: rotateY(180deg) translateY(-20px);
+    right: 50%; /* Meet at the middle */
+  }
+  75% {
+    transform: rotateY(180deg) translateY(0px);
+    right: 45%;
+  }
+  100% {
+    transform: rotateY(180deg) translateY(-70px);
+    right: 0%;
+  }
+}
+@keyframes moveFish3 {
+  0% {
+    transform: translateY(-50px);
+    right: 100%;
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  75% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+    right: 0%;
+  }
+}
+@keyframes moveFish6 {
+  0% {
+    transform: rotateY(180deg) translateY(-50px);
+    left: 100%;
+  }
+  25% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  65% {
+    transform: rotateY(180deg) translateY(-20px);
+  }
+  75% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  100% {
+    transform: rotateY(180deg) translateY(-50px);
+    left: -25%;
+  }
+}
+@keyframes moveFish8 {
+  0% {
+    transform: rotateY(180deg) translateY(-10px);
+    right: 100%;
+    visibility: visible;
+  }
+  25% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  45% {
+    transform: rotateY(180deg) translateY(-30px);
+    right: 50%; /* Meet at the middle */
+  }
+  75% {
+    transform: rotateY(180deg) translateY(20px);
+  }
+  100% {
+    transform: rotateY(180deg) translateY(100px);
+    right: 0%;
+  }
+}
+@keyframes moveFishGroup {
+  0% {
+    transform: translateY(-50px);
+    left: 100%;
+    visibility: visible;
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  65% {
+    transform: translateY(-20px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-50px);
+    left: -25%;
+  }
+}
+/* end fish animation */
+
+/* start turtle section */
+.turtle1 {
+  animation: moveTurtle1 15s linear 0.5s infinite;
+  top: 90%;
+  width: 55px;
+  visibility: hidden;
+}
+
+.turtle2 {
+  animation: moveTurtle2 22s linear 4s infinite;
+  top: 92%;
+  right: -25%;
+  width: 100px;
+}
+/* end turtle section */
+
+/* start turtle animation */
+@keyframes moveTurtle1 {
+  0% {
+    transform: translateY(-50px);
+    left: 100%;
+    visibility: visible;
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  75% {
+    transform: translateY(-70px);
+  }
+  100% {
+    transform: translateY(-20px);
+    left: -25%;
+  }
+}
+@keyframes moveTurtle2 {
+  0% {
+    transform: translateY(-50px);
+    right: 100%;
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
+  75% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(-10px);
+    right: 0%;
+  }
+}
+/* end turtle animation */
+/* end creatures section */
