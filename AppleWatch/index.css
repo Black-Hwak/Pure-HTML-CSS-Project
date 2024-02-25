@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+body {
+  padding: 20px 25px;
+}
+hr {
+  width: 400px;
+}
+
+/* start nav */
+.nav img {
+  width: 50px;
+  vertical-align: middle;
+}
+
+.nav h3 {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 8px;
+}
+/* end nav */
+
+/* start typing */
+.typing {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  margin-left: 6px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.typing h2 {
+  border-right: 3px solid rgb(54, 53, 53);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 3s steps(30), blink 1s infinite;
+}
+
+.typing h2:first-child {
+  width: 375px;
+}
+
+.typing h2:last-child {
+  margin-left: 50px;
+  width: 235px;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  20% {
+    border-right-color: transparent;
+  }
+}
+/* end typing */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+/* start watch box */
+.watch {
+  margin-left: 50px;
+  position: relative;
+}
+.watch > div {
+  width: 330px;
+  height: 330px;
+  background-color: white;
+  box-shadow: 5px 4px 10px 1px rgba(0, 0, 0, 0.68);
+}
+
+.watch p {
+  color: red;
+  text-align: center;
+  padding-top: 20px;
+}
+/* end watch box */
+
+/* start selected case and strap */
+#watchCase,
+#watchStrap {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 87px;
+  top: 190px;
+  transition: all 0.8s ease-in-out;
+}
+#watchCase {
+  z-index: 200;
+}
+
+#watchStrap {
+  z-index: 100;
+}
+
+.choices {
+  padding: 70px 200px 0 100px;
+}
+
+.choices img {
+  width: 60px;
+}
+
+.case{
+  margin-bottom: 15px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label img {
+  cursor: pointer;
+  margin-right: 10px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+input[type="radio"]:checked + label img {
+  opacity: 1;
+}
+
+#case1:checked ~ #watchCase {
+  background-image: url("./img/cases/case1.png");
+}
+
+#case2:checked ~ #watchCase {
+  background-image: url("./img/cases/case2.png");
+}
+
+#case3:checked ~ #watchCase {
+  background-image: url("./img/cases/case3.png");
+}
+
+#case4:checked ~ #watchCase {
+  background-image: url("./img/cases/case4.png");
+}
+
+#case5:checked ~ #watchCase {
+  background-image: url("./img/cases/case5.png");
+}
+
+
+#strap1:checked ~ #watchStrap {
+  background-image: url("./img/straps/strap1.png");
+}
+
+#strap2:checked ~ #watchStrap {
+  background-image: url("./img/straps/strap2.png");
+}
+
+#strap3:checked ~ #watchStrap {
+  background-image: url("./img/straps/strap3.png");
+}
+
+#strap4:checked ~ #watchStrap {
+  background-image: url("./img/straps/strap4.png");
+}
+
+#strap5:checked ~ #watchStrap {
+  background-image: url("./img/straps/strap5.png");
+}
+
+.strap hr {
+  margin-bottom: 10px;
+}
+/* end selected case and strap */
+
+/* save button */
+.save {
+  color: white;
+  background-color: #007bff;
+  border: 0;
+  padding: 5px 15px;
+  border-radius: 3px;
+  float: right;
+  margin: 5px 90px 100px 0px;
+  cursor: pointer;
+}
